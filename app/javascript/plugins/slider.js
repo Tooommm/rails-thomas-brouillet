@@ -3,24 +3,24 @@ const initSlider = () => {
 
   let slide_data = [
     {
-      'src':'https://images.unsplash.com/photo-1506765336936-bb05e7e06295?ixlib=rb-0.3.5&s=d40582dbbbb66c7e0812854374194c2e&auto=format&fit=crop&w=1050&q=80',
-      'title':'Slide 1',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+      'src':'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      'title':"c'est pô un liv' !",
+      'copy':'thomasbrouillet.com'
     },
     {
-      'src':'https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-0.3.5&s=4d04f3d5a488db4031d90f5a1fbba42d&auto=format&fit=crop&w=1050&q=80',
-      'title':'Slide 2',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+      'src':'https://images.unsplash.com/photo-1557599443-2071a2df9c19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3364&q=80',
+      'title':"C'est pô un disse de ton mozart",
+      'copy':'le développement web au service des services'
     },
     {
-      'src':'https://images.unsplash.com/photo-1504271863819-d279190bf871?ixlib=rb-0.3.5&s=7a2b986d405a04b3f9be2e56b2be40dc&auto=format&fit=crop&w=334&q=80',
-      'title':'Slide 3',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+      'src':'https://images.unsplash.com/photo-1520509414578-d9cbf09933a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80',
+      'title':"C'est pô une gourmette! C'est pô une chainette",
+      'copy':'Mettez les deux pieds dans le turfu'
     },
     {
-      'src':'https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixlib=rb-0.3.5&s=87131a6b538ed72b25d9e0fc4bf8df5b&auto=format&fit=crop&w=1050&q=80',
-      'title':'Slide 4',
-      'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+      'src':'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80',
+      'title':"c'est pour les jeunes",
+      'copy':'SOON thomasbrouillet.com'
     },
 
   ];
@@ -72,7 +72,7 @@ const initSlider = () => {
          break;
     }
     caption.appendChild(slide_title);
-    caption.insertAdjacentHTML('beforeend','<div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit. </span></div>');
+    caption.insertAdjacentHTML('beforeend','<div class="caption-subhead"><span> '+slide_data[i].copy+' </span></div>');
     slides.push(slide);
     captions.push(caption);
     leftSlider.appendChild(slide);
